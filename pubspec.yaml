@@ -15,6 +15,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^2.1.0
   animate_do: ^2.0.0
+  flutter_bounce: ^1.1.0
+    # to handle SVGs for Android, iOS, and Web
+  flutter_svg: ^0.21.0+1
+
+  # state management, intelligent dependency injection, and route management
+  get: ^4.1.4
 
 dev_dependencies:
   flutter_test:
