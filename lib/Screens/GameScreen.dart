@@ -1,4 +1,8 @@
 import 'package:brain_booster/Quiz/screens/welcome/welcome_screen.dart';
+import 'package:brain_booster/dice.dart';
+import 'package:brain_booster/maze/homePage.dart';
+import 'package:brain_booster/telly/pages/home/home.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
 import 'package:get/get.dart';
@@ -61,7 +65,10 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                   Bounce(
                     duration: Duration(milliseconds: 200),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
                     child: Container(
                       child: Center(
                         child: Image(image: AssetImage('assets/puzzle.png')),
@@ -70,21 +77,25 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                   Bounce(
                     duration: Duration(milliseconds: 200),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home()));
+                    },
                     child: Container(
                       child: Center(
-                        child:
-                            Image(image: AssetImage('assets/comingsoon.png')),
+                        child: Image(image: AssetImage('assets/telly.png')),
                       ),
                     ),
                   ),
                   Bounce(
                     duration: Duration(milliseconds: 200),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => DicePage()));
+                    },
                     child: Container(
                       child: Center(
-                        child:
-                            Image(image: AssetImage('assets/comingsoon.png')),
+                        child: Image(image: AssetImage('assets/dice.png')),
                       ),
                     ),
                   ),
